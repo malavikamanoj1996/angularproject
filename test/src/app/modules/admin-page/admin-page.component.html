@@ -1,1 +1,19 @@
-<p>admin-page works!</p>
+<div class="container">
+
+    <button type="submit" (click)=toggleVehicleData()>view vehicle status</button>
+    <div [hidden]="isVehicleShow" *ngFor="let list of list">
+        
+       <p> Vehicle id: {{list.vehicleid}}</p>
+       <p> Place: {{list.place}}</p>
+       <p> Date: {{list.date| date:"MMM d, y, h:mm:ss a"}} </p>
+       <p> Speed:{{list.speed}}</p>
+       <p>Vehicleregno: {{list.vehicleregno}}</p>
+        <p> Latitude: {{list.lat}}</p>
+            <p> Longitude: {{list.long}}</p>
+    </div>
+    <button type="submit" (click)=toggleMapData()>view vehicle locaation in google map</button>
+    <div [hidden]="isMapShow">
+        <app-map></app-map>
+    </div>
+
+</div>

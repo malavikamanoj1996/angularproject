@@ -1,0 +1,13 @@
+[
+    {
+        "id" : 1,
+        "vehicleid": "1",
+        "place": "Kottayam ",
+        "date": "Sun Feb 12 2020 00:04:05 GMT+0530",
+        "speed":"0",
+        "vehicleregno": "KL-56 AC 5687",
+        "lat": "76.516754",
+        "long": "9.600795"
+    }
+   
+]
